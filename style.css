@@ -1,0 +1,17 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.secret-number {
+  font-size: 50px;
+  color: white;
+}
+.message {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.right p {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+}
