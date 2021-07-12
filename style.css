@@ -1,9 +1,13 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body {
+  background-color: rgb(255, 187, 0);
+}
 .secret-number {
   font-size: 50px;
   color: white;
+  background-color: black;
 }
 .message {
   font-size: 20px;
