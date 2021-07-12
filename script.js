@@ -84,4 +84,5 @@ document.querySelector('.retry').addEventListener('click', function () {
   document.querySelector('.retry').setAttribute('disabled', 'disabled');
   document.querySelector('.check').removeAttribute('disabled', 'disabled');
   document.querySelector('body').style.backgroundColor = '#FBBB02';
+  document.querySelector('.secret-number').textContent = '?';
 });
