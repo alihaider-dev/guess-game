@@ -4,78 +4,119 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guess Game</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <title>Guess Game V 1.0</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <!-- Header Section Start -->
-      <section class="header text-center pt-5">
+    <div class="content">
+      <div class="nes-container">
+        <!-- Header Section Start -->
+      <section class="header">
         <h2>Welcome to the Guessing Number Game</h2>
         <p>Let's guess the correct number</p>
       </section>
       <!-- Header Section End -->
 
       <!-- Alert Message Section Start -->
-      <section class="alert text-center">
-        <p class="message border p-3">Start Gussing the Number</p>
+      <section class="alert nes-container with-title is-centered">
+        <p class="title">Notification</p>
+        <section class="message-left">
+            <i class="nes-bcrikko"></i>
+            <!-- Balloon -->
+            <div class="nes-balloon from-left">
+              <p class="message">Are you good in Gussing? Let's see</p>
+            </div>
+          </section>
+
+
       </section>
       <!-- Alert Message Section End -->
 
       <!-- Content Section Start -->
       <section class="content">
-        <div class="row">
+        <div class="abc">
           <!-- Left Section  -->
-          <div class="left col text-center">
+          <div class="left">
             <div class="d-flex justify-content-center">
-              <p class="secret-number p-5 w-50">?</p>
+              <p class="secret-number" style="margin-bottom: 15px;">?</p>
             </div>
             <p class="value">(Select Number Between 1 and 20)</p>
           </div>
           <!-- Right Section -->
-          <div class="right col">
+          <div class="right">
             <p class="label-score py-2">
-              💗 life: <span class="score">5</span>
+              <i class="nes-icon heart is-small"></i>
+              life:<span class="score">5</span>
             </p>
             <p class="label-highscore py-2">
-              🏆 Highscore: <span class="highscore">0</span>
+              <i class="nes-icon trophy is-small"></i>
+              Highscore: <span class="highscore">0</span>
             </p>
 
             <!-- Button -->
-            <div class="input-group mb-3 py-2">
-              <input
-                type="number"
-                class="guess-number form-control"
-                placeholder="Guees the Number"
-                aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
-              />
-              <div class="input-group-append">
-                <button class="check btn btn-danger" type="button">
+            <div class="guess-value mb-3 py-2">
+              <div class="nes-field">
+                <input
+                  type="number"
+                  class="guess-number nes-input"
+                  placeholder="Guees the Number"
+                />
+              </div>
+
+              <div class="buttons">
+                <button class="check nes-btn is-primary" type="button">
                   Check
                 </button>
+
+                <button class="retry nes-btn is-warning">Retry</button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="row">
-        <div class="faild d-flex justify-content-center py-5">
-          <button class="retry btn btn-secondary w-100">Retry</button>
-        </div>
+      <div class="">
+        <div class="faild d-flex justify-content-center py-5"></div>
       </div>
       <!-- Content Section End -->
 
-      <footer class="py-5 text-center"></footer>
+      <footer class="footer">
+        &copy; Guess Game V1.0 | Design & Developed by <a href="https://alihaider.dev" target="_blank">ahDev</a> <br> <br>
+
+        <section class="icon-list">
+          <!-- twitter -->
+          
+            <a href="https://twitter.com/justalihaider" target="_blank"><i class="nes-icon twitter is-small"></i></a>
+          <!-- facebook -->
+          
+            <a href="https://facebook.com/justalihaider" target="_blank"><i class="nes-icon facebook is-small"></i></a>
+      
+          <!-- instagram -->
+          
+            <a href="https://instagram.com/justalihaider" target="_blank"><i class="nes-icon instagram is-small"></i></a>
+          
+          <!-- github -->
+          
+            <a href="https://github.com/ahDevGit" target="_blank"><i class="nes-icon github is-small"></i></a>
+          
+          <!-- linkedin -->
+            <a href="https://linkedin.com/justalihaider" target="_blank"><i class="nes-icon linkedin is-small"></i></a>
+          <!-- youtube -->
+          
+            <a href="https://youtube.com/justalihaider" target="_blank"><i class="nes-icon youtube is-small"></i></a>
+
+        </section>
+      </footer>
 
       <!-- Script.js File -->
       <script src="script.js"></script>
+    </div>
+      </div>
     </div>
   </body>
 </html>

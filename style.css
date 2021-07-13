@@ -1,21 +1,55 @@
 * {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Press Start 2P';
 }
-body {
-  background-color: rgb(255, 187, 0);
+
+.content {
+  min-width: 50vw;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 .secret-number {
   font-size: 50px;
   color: white;
   background-color: black;
+  width: 10rem;
+  margin: 0 auto;
 }
+.guess-value {
+  display: flex;
+  flex-direction: column;
+}
+.buttons {
+  margin-top: 1rem;
+}
+
+.nes-progress {
+  width: 10rem !important;
+  height: 22px !important;
+  margin: 10px !important;
+}
+
 .message {
-  font-size: 20px;
   text-transform: uppercase;
 }
 .right p {
-  font-size: 20px;
   text-transform: uppercase;
-  font-weight: 700;
-  color: black;
 }
+.message-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+}
+.alert {
+  margin-bottom: 10px;
+}
+
+/* .nes-bcrikko {
+  position: relative;
+  display: flex !important;
+  width: 100% !important;
+} */
