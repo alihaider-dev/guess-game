@@ -31,37 +31,21 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.retry').classList.remove('is-disabled');
     document.querySelector('.check').classList.add('is-disabled');
 
-  } else if (guess > secretNumber) {
+    //When You guess Wrong Number
+  } else if (guess !== secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = 'You should guess lower Number';
-      score--;
-      document.querySelector('.score').textContent = score;
-
-      document.querySelector('.message').style.color = 'red';
-    } else {
-      document.querySelector('.message').textContent = 'Game Over, Good luck for Next Time';
-      document.querySelector('.score').textContent = 0;
-
-      document.querySelector('.message').style.color = 'red';
-      document.querySelector('.retry').classList.remove('is-disabled');
-      document.querySelector('.check').classList.add('is-disabled');
-    }
-
-  } else if (guess < secretNumber) {
-    if (score > 1) {
-      document.querySelector('.message').textContent = 'Guess Heigher Number';
+      document.querySelector('.message').textContent = guess > secretNumber ? 'You should guess lower Number' : 'You should guess lower Number';
       score--;
       document.querySelector('.score').textContent = score;
       document.querySelector('.message').style.color = 'red';
     } else {
       document.querySelector('.message').textContent = 'Game Over, Good luck for Next Time';
-      document.querySelector('.message').style.color = 'red';
       document.querySelector('.score').textContent = 0;
+      document.querySelector('.message').style.color = 'red';
       document.querySelector('.retry').classList.remove('is-disabled');
       document.querySelector('.check').classList.add('is-disabled');
     }
   }
-
 })
 
 
