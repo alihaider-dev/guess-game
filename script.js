@@ -34,7 +34,7 @@ document.querySelector('.check').addEventListener('click', function () {
     //When You guess Wrong Number
   } else if (guess !== secretNumber) {
     if (score > 1) {
-      document.querySelector('.message').textContent = guess > secretNumber ? 'You should guess lower Number' : 'Guess Heigher Number';
+      document.querySelector('.message').textContent = guess > secretNumber ? 'Guess Heigher Number' : 'Guess Heigher NumberYou should guess lower Number';
       score--;
       document.querySelector('.score').textContent = score;
       document.querySelector('.message').style.color = 'red';
