@@ -5,6 +5,7 @@
 let secretNumber = Math.trunc(Math.random() * 20 + 1);
 let score = 5;
 
+
 // document.querySelector('.secret-number').textContent = secretNumber;
 
 document.querySelector('.retry').classList.add('is-disabled')
